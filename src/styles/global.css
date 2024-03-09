@@ -24,6 +24,18 @@
   --border-box-dark: #383148;
 }
 
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background: var(--bg-dark);
+  }
+
+  p,
+  span {
+    color: var(--fg-dark);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +51,7 @@ body {
 h1 {
   font-size: 2.875rem;
   font-weight: 800;
-  color: var(--bg-light);
+  color: var(--primary);
   background: linear-gradient(45deg, var(--primary), var(--primary-light));
   -webkit-background-clip: text;
   background-clip: text;
