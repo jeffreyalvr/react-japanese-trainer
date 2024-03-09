@@ -26,10 +26,7 @@ const Footer = () => {
         title="Clique para alterar o tema"
         className="flex flex-row gap-2 items-center text-[var(--primary-light)] hover:underline"
       >
-        <img
-          src={tema === "light" ? theme_light_img : theme_dark_img}
-          alt="Toggle"
-        />
+        <img src={tema === "light" ? theme_light_img : theme_dark_img} alt="Toggle" />
         Usar modo escuro
       </button>
     </footer>
