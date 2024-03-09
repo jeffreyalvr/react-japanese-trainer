@@ -10,6 +10,11 @@
 :root {
   --primary: #6562fc;
   --primary-light: #7880ff;
+  --primary-opaque: #60627c;
+  --gold: rgb(247, 182, 41);
+  --bg-tab: #201a2c;
+  --bg-tab-focus: #383148;
+  --bg-tab-hover: rgb(67, 59, 87);
 
   /* tema light */
   --bg-light: #edf0ff;
