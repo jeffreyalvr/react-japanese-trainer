@@ -15,25 +15,13 @@
   --bg-light: #edf0ff;
   --bg-box-light: #fff;
   --border-box-light: #e3e2e3;
-  --fg-light: #393939;
+  --fg-light: #545454;
 
   /* tema dark */
   --fg-dark: #eee;
   --bg-dark: #171725;
   --bg-box-dark: #201a2c;
   --border-box-dark: #383148;
-}
-
-@media (prefers-color-scheme: dark) {
-  html,
-  body {
-    background: var(--bg-dark);
-  }
-
-  p,
-  span {
-    color: var(--fg-dark);
-  }
 }
 
 * {
@@ -61,4 +49,16 @@ h1 {
 p,
 span {
   color: var(--fg-dark);
+}
+
+@media (prefers-color-scheme: light) {
+  html,
+  body {
+    background: var(--bg-light);
+  }
+
+  p,
+  span {
+    color: var(--fg-light);
+  }
 }
