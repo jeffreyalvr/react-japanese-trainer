@@ -1,8 +1,12 @@
+import "./styles/global.css";
+
+import Routes from "./routes";
+
 const App = () => {
   return (
-    <>
-      <h1>hello there</h1>
-    </>
+    <div className="container flex flex-col gap-10 mx-auto md:w-[40rem]">
+      <Routes />
+    </div>
   );
 };
 
