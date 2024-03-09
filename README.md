@@ -10,13 +10,13 @@ Projeto para treinar o alfabeto japonês.
 
 1. React JS;
 2. Tailwind;
-3. React Router.
+3. React Router;
+4. LocalStorage.
 
 ## Acesso direto ao projeto em produção
 
 Para testar o projeto em produção, acesse o seguinte link hospedado na plataforma Vercel:<br>
-
-**a ser adicionado posteriormente**
+https://japanese-trainer.vercel.app/
 
 ## Acesso por meio de instalação local
 
