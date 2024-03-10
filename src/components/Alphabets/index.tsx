@@ -13,7 +13,7 @@ const Alphabet = () => {
     <div className="rounded-lg flex flex-col w-full border-4 border-[var(--border-box-light)] bg-[var(--bg-box-light)] overflow-hidden dark:border-[var(--border-box-dark)] dark:bg-[var(--bg-box-dark)]">
       <Tabs />
       <div className="flex flex-row gap-4 p-6 flex-wrap py-6">
-        {alfabeto.caracteres.map((item) => (
+        {alfabeto.hiragana.caracteres.map((item) => (
           <div className="flex flex-col gap-3">
             <div
               key={item.id}
