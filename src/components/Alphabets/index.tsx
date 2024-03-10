@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 
 import Tabs from "./Tabs";
 import TabContent from "./TabContent";
@@ -11,15 +11,7 @@ import alfabeto from "./alfabeto.json";
 const Alphabet = () => {
   const { showTranslations } = useContext(TranslationsContext);
 
-  const tab_value = localStorage.getItem("tab");
-
-  const [selectedTab, setSelectedTab] = useState(
-    tab_value !== null ? JSON.parse(tab_value) : 0
-  );
-
-  useEffect(() => {
-    localStorage.setItem("tab", String(selectedTab));
-  }, [selectedTab]);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   const switchTab = (tabIndex: number) => {
     setSelectedTab(tabIndex);
