@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
 
 export const TranslationsContext = createContext({
-  showTranslations: "true",
+  showTranslations: true,
   toggleTranslations: () => {},
 });
 
-export const useThemeContext = () => useContext(TranslationsContext);
+export const useTranslationsContext = () => useContext(TranslationsContext);

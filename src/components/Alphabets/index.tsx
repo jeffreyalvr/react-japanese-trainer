@@ -1,7 +1,14 @@
+import { useContext } from "react";
+
 import Tabs from "./Tabs";
+
+import { TranslationsContext } from "../../Contexts/TranslationsContext";
+
 import alfabeto from "./alfabeto.json";
 
 const Alphabet = () => {
+  const { showTranslations } = useContext(TranslationsContext);
+
   return (
     <div className="rounded-lg flex flex-col w-full border-4 border-[var(--border-box-light)] bg-[var(--bg-box-light)] overflow-hidden dark:border-[var(--border-box-dark)] dark:bg-[var(--bg-box-dark)]">
       <Tabs />
@@ -15,9 +22,11 @@ const Alphabet = () => {
               <div className="text-xl font-bold text-[var(--fg-light) dark:text-[var(--fg-dark)]">
                 {item.caractere}
               </div>
-              <div className="text-sm text-[var(--primary-opaque)] dark:text-[var(--fg-dark)]">
-                {item.traducao}
-              </div>
+              {showTranslations ? (
+                <div className="text-sm text-[var(--primary-opaque)] dark:text-[var(--fg-dark)]">
+                  {item.traducao}
+                </div>
+              ) : null}
             </div>
             <div className="rounded-lg w-full h-1 bg-gray-300 dark:bg-[var(--primary-opaque)]">
               <div className="rounded-lg w-[30px] h-1 bg-[var(--gold)]"></div>
