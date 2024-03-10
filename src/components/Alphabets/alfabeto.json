@@ -1,15 +1,15 @@
 {
   "caracteres": [
-    { "id": 0, "texto": "teste", "progresso": 100 },
-    { "id": 1, "texto": "teste", "progresso": 75 },
-    { "id": 2, "texto": "teste", "progresso": 33 },
-    { "id": 3, "texto": "teste", "progresso": 15 },
-    { "id": 4, "texto": "teste", "progresso": 18 },
-    { "id": 5, "texto": "teste", "progresso": 75 },
-    { "id": 6, "texto": "teste", "progresso": 56 },
-    { "id": 7, "texto": "teste", "progresso": 79 },
-    { "id": 8, "texto": "teste", "progresso": 100 },
-    { "id": 9, "texto": "teste", "progresso": 81 },
-    { "id": 10, "texto": "teste", "progresso": 100 }
+    { "id": 0, "caractere": "お", "traducao": "a", "progresso": 100 },
+    { "id": 1, "caractere": "い", "traducao": "i", "progresso": 75 },
+    { "id": 2, "caractere": "う", "traducao": "u", "progresso": 33 },
+    { "id": 3, "caractere": "え", "traducao": "e", "progresso": 15 },
+    { "id": 4, "caractere": "お", "traducao": "o", "progresso": 18 },
+    { "id": 5, "caractere": "か", "traducao": "ka", "progresso": 75 },
+    { "id": 6, "caractere": "き", "traducao": "ki", "progresso": 56 },
+    { "id": 7, "caractere": "く", "traducao": "ku", "progresso": 79 },
+    { "id": 8, "caractere": "け", "traducao": "ke", "progresso": 100 },
+    { "id": 9, "caractere": "こ", "traducao": "ko", "progresso": 81 },
+    { "id": 10, "caractere": "さ", "traducao": "sa", "progresso": 100 }
   ]
 }
