@@ -1,13 +1,13 @@
 type ButtonProps = {
   text: string;
-  title: string;
+  title?: string;
   variant: "primary" | "secondary";
 };
 
 const Button = ({ text, title, variant }: ButtonProps) => {
   return (
     <button
-      title={title}
+      title={title || ""}
       className={`
         border-2 rounded-md px-4 py-1 cursor-pointer
         ${
