@@ -1,6 +1,8 @@
 import TabOptionsMenu from "../TabOptionsMenu";
 
-type Alphabet = {
+type Alphabet = AlphabetStructure[];
+
+type AlphabetStructure = {
   caracteres: AlphabetItem[];
 };
 
@@ -12,17 +14,21 @@ type AlphabetItem = {
 };
 
 const TabContent = ({
-  alphabet,
+  selectedTab,
+  alphabets,
   showTranslations,
 }: {
-  alphabet: Alphabet;
+  selectedTab: number;
+  alphabets: Alphabet;
   showTranslations: boolean;
 }) => {
+  const selectedAlphabet = alphabets[selectedTab];
+
   return (
     <div className="flex flex-col">
       <TabOptionsMenu />
       <div className="grid grid-cols-5 gap-y-6 flex-wrap w-full p-6 justify-items-center">
-        {alphabet.caracteres.map((item) => (
+        {selectedAlphabet.caracteres.map((item) => (
           <div className="flex flex-col gap-3 w-20">
             <div
               key={item.id}

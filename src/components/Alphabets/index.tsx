@@ -35,7 +35,8 @@ const Alphabet = () => {
       <div className="rounded-lg flex flex-col w-full border-4 border-[var(--border-box-light)] bg-[var(--bg-box-light)] overflow-hidden dark:border-[var(--border-box-dark)] dark:bg-[var(--bg-box-dark)]">
         <Tabs />
         <TabContent
-          alphabet={selectedTab === 0 ? alfabeto.hiragana : alfabeto.katakana}
+          selectedTab={selectedTab}
+          alphabets={[alfabeto.hiragana, alfabeto.katakana]}
           showTranslations={showTranslations}
         />
       </div>

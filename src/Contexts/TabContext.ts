@@ -1,8 +1,13 @@
 import { createContext, useContext } from "react";
 
-export const TabContext = createContext({
+type ContextProps = {
+  selectedTab: Number;
+  switchTab: (tabIndex: number) => void;
+};
+
+export const TabContext = createContext<ContextProps>({
   selectedTab: 0,
-  switchTab: (tabIndex: number) => {},
+  switchTab: () => {},
 });
 
 export const useTabContext = () => useContext(TabContext);
