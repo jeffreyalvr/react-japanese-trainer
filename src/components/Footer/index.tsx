@@ -31,7 +31,7 @@ const Footer = () => {
           className="flex flex-row gap-2 items-center text-[var(--primary-light)] hover:brightness-125"
         >
           <img
-            src={tema === "light" ? toggle_on_img : toggle_off_img}
+            src={tema === "dark" ? toggle_on_img : toggle_off_img}
             alt="Toggle"
           />
           Usar modo escuro
