@@ -1,5 +1,4 @@
 import Header from "../../components/Header";
-import Box from "../../components/Box";
 import Footer from "../../components/Footer";
 import Alphabet from "../../components/Alphabets";
 
@@ -8,7 +7,6 @@ const Home = () => {
     <>
       <Header />
       <Alphabet />
-      {/* <Box /> */}
       <Footer />
     </>
   );
