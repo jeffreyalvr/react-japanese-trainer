@@ -4,8 +4,8 @@ import { TabContext } from "../../../Contexts/TabContext";
 
 const Tabs = () => {
   const tabs = [
-    { id: 0, texto: "Hiragana", progresso: "64%" },
-    { id: 1, texto: "Katakana", progresso: "8%" },
+    { id: 0, texto: "Hiragana", progresso: "0%" },
+    { id: 1, texto: "Katakana", progresso: "0%" },
   ];
 
   const { selectedTab, switchTab } = useContext(TabContext);
