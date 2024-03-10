@@ -11,7 +11,7 @@ const Footer = () => {
     useContext(TranslationsContext);
 
   return (
-    <footer className="w-full flex flex-col gap-2 items-center justify-center py-10 border-t-2 border-dashed border-t-[var(--border-box-light)] dark:border-t-[var(--border-box-dark)]">
+    <footer className="w-full flex flex-col mt-8 gap-2 items-center justify-center py-10 border-t-2 border-dashed border-t-[var(--border-box-light)] dark:border-t-[var(--border-box-dark)]">
       <span className="flex flex-row gap-2">
         Feito por{" "}
         <a

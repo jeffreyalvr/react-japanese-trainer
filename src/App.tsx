@@ -47,7 +47,7 @@ const App = () => {
           toggleTranslations,
         }}
       >
-        <div className="container flex flex-col gap-10 mx-auto md:w-[40rem]">
+        <div className="container flex flex-col gap-2 mx-auto md:w-[40rem]">
           <Routes />
         </div>
       </TranslationsContext.Provider>
