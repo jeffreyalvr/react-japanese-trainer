@@ -1,152 +1,556 @@
 {
-  "hiragana": {
-    "caracteres": [
-      { "id": 0, "caractere": "お", "romanizacao": "a", "progresso": 100 },
-      { "id": 1, "caractere": "い", "romanizacao": "i", "progresso": 75 },
-      { "id": 2, "caractere": "う", "romanizacao": "u", "progresso": 33 },
-      { "id": 3, "caractere": "え", "romanizacao": "e", "progresso": 15 },
-      { "id": 4, "caractere": "お", "romanizacao": "o", "progresso": 18 },
-      { "id": 5, "caractere": "か", "romanizacao": "ka", "progresso": 75 },
-      { "id": 6, "caractere": "き", "romanizacao": "ki", "progresso": 56 },
-      { "id": 7, "caractere": "く", "romanizacao": "ku", "progresso": 79 },
-      { "id": 8, "caractere": "け", "romanizacao": "ke", "progresso": 100 },
-      { "id": 9, "caractere": "こ", "romanizacao": "ko", "progresso": 81 },
-      { "id": 10, "caractere": "さ", "romanizacao": "sa", "progresso": 100 },
-      { "id": 11, "caractere": "し", "romanizacao": "shi", "progresso": 65 },
-      { "id": 12, "caractere": "す", "romanizacao": "su", "progresso": 42 },
-      { "id": 13, "caractere": "せ", "romanizacao": "se", "progresso": 88 },
-      { "id": 14, "caractere": "そ", "romanizacao": "so", "progresso": 55 },
-      { "id": 15, "caractere": "た", "romanizacao": "ta", "progresso": 90 },
-      { "id": 16, "caractere": "ち", "romanizacao": "chi", "progresso": 72 },
-      { "id": 17, "caractere": "つ", "romanizacao": "tsu", "progresso": 40 },
-      { "id": 18, "caractere": "て", "romanizacao": "te", "progresso": 61 },
-      { "id": 19, "caractere": "と", "romanizacao": "to", "progresso": 84 },
-      { "id": 20, "caractere": "な", "romanizacao": "na", "progresso": 77 },
-      { "id": 21, "caractere": "に", "romanizacao": "ni", "progresso": 95 },
-      { "id": 22, "caractere": "ぬ", "romanizacao": "nu", "progresso": 50 },
-      { "id": 23, "caractere": "ね", "romanizacao": "ne", "progresso": 68 },
-      { "id": 24, "caractere": "の", "romanizacao": "no", "progresso": 80 },
-      { "id": 25, "caractere": "は", "romanizacao": "ha", "progresso": 93 },
-      { "id": 26, "caractere": "ひ", "romanizacao": "hi", "progresso": 73 },
-      { "id": 27, "caractere": "ふ", "romanizacao": "fu", "progresso": 38 },
-      { "id": 28, "caractere": "へ", "romanizacao": "he", "progresso": 55 },
-      { "id": 29, "caractere": "ほ", "romanizacao": "ho", "progresso": 82 },
-      { "id": 30, "caractere": "ま", "romanizacao": "ma", "progresso": 65 },
-      { "id": 31, "caractere": "み", "romanizacao": "mi", "progresso": 47 },
-      { "id": 32, "caractere": "む", "romanizacao": "mu", "progresso": 75 },
-      { "id": 33, "caractere": "め", "romanizacao": "me", "progresso": 90 },
-      { "id": 34, "caractere": "も", "romanizacao": "mo", "progresso": 60 },
-      { "id": 35, "caractere": "や", "romanizacao": "ya", "progresso": 40 },
-      { "id": 36, "caractere": "ゆ", "romanizacao": "yu", "progresso": 88 },
-      { "id": 37, "caractere": "よ", "romanizacao": "yo", "progresso": 77 },
-      { "id": 38, "caractere": "ら", "romanizacao": "ra", "progresso": 93 },
-      { "id": 39, "caractere": "り", "romanizacao": "ri", "progresso": 72 },
-      { "id": 40, "caractere": "る", "romanizacao": "ru", "progresso": 95 },
-      { "id": 41, "caractere": "れ", "romanizacao": "re", "progresso": 50 },
-      { "id": 42, "caractere": "ろ", "romanizacao": "ro", "progresso": 68 },
-      { "id": 43, "caractere": "わ", "romanizacao": "wa", "progresso": 80 },
-      { "id": 44, "caractere": "を", "romanizacao": "wo", "progresso": 77 },
-      { "id": 45, "caractere": "ん", "romanizacao": "n", "progresso": 93 },
-      { "id": 46, "caractere": "が", "romanizacao": "ga", "progresso": 75 },
-      { "id": 47, "caractere": "ぎ", "romanizacao": "gi", "progresso": 56 },
-      { "id": 48, "caractere": "ぐ", "romanizacao": "gu", "progresso": 79 },
-      { "id": 49, "caractere": "げ", "romanizacao": "ge", "progresso": 100 },
-      { "id": 50, "caractere": "ご", "romanizacao": "go", "progresso": 81 },
-      { "id": 51, "caractere": "ざ", "romanizacao": "za", "progresso": 100 },
-      { "id": 52, "caractere": "じ", "romanizacao": "ji", "progresso": 65 },
-      { "id": 53, "caractere": "ず", "romanizacao": "zu", "progresso": 42 },
-      { "id": 54, "caractere": "ぜ", "romanizacao": "ze", "progresso": 88 },
-      { "id": 55, "caractere": "ぞ", "romanizacao": "zo", "progresso": 55 },
-      { "id": 56, "caractere": "だ", "romanizacao": "da", "progresso": 90 },
-      { "id": 57, "caractere": "ぢ", "romanizacao": "ji", "progresso": 72 },
-      { "id": 58, "caractere": "づ", "romanizacao": "dzu", "progresso": 34 },
-      { "id": 59, "caractere": "で", "romanizacao": "de", "progresso": 61 },
-      { "id": 60, "caractere": "ど", "romanizacao": "do", "progresso": 84 },
-      { "id": 61, "caractere": "ば", "romanizacao": "ba", "progresso": 77 },
-      { "id": 62, "caractere": "び", "romanizacao": "bi", "progresso": 95 },
-      { "id": 63, "caractere": "ぶ", "romanizacao": "bu", "progresso": 50 },
-      { "id": 64, "caractere": "べ", "romanizacao": "be", "progresso": 68 },
-      { "id": 65, "caractere": "ぼ", "romanizacao": "bo", "progresso": 80 },
-      { "id": 66, "caractere": "ぱ", "romanizacao": "pa", "progresso": 93 },
-      { "id": 67, "caractere": "ぴ", "romanizacao": "pi", "progresso": 73 },
-      { "id": 68, "caractere": "ぷ", "romanizacao": "pu", "progresso": 38 },
-      { "id": 69, "caractere": "ぺ", "romanizacao": "pe", "progresso": 55 },
-      { "id": 70, "caractere": "ぽ", "romanizacao": "po", "progresso": 82 }
-    ]
-  },
-  "katakana": {
-    "caracteres": [
-      { "id": 0, "caractere": "ア", "romanizacao": "a", "progresso": 70 },
-      { "id": 1, "caractere": "イ", "romanizacao": "i", "progresso": 45 },
-      { "id": 2, "caractere": "ウ", "romanizacao": "u", "progresso": 92 },
-      { "id": 3, "caractere": "エ", "romanizacao": "e", "progresso": 60 },
-      { "id": 4, "caractere": "オ", "romanizacao": "o", "progresso": 35 },
-      { "id": 5, "caractere": "カ", "romanizacao": "ka", "progresso": 88 },
-      { "id": 6, "caractere": "キ", "romanizacao": "ki", "progresso": 52 },
-      { "id": 7, "caractere": "ク", "romanizacao": "ku", "progresso": 75 },
-      { "id": 8, "caractere": "ケ", "romanizacao": "ke", "progresso": 42 },
-      { "id": 9, "caractere": "コ", "romanizacao": "ko", "progresso": 65 },
-      { "id": 10, "caractere": "サ", "romanizacao": "sa", "progresso": 47 },
-      { "id": 11, "caractere": "シ", "romanizacao": "shi", "progresso": 82 },
-      { "id": 12, "caractere": "ス", "romanizacao": "su", "progresso": 71 },
-      { "id": 13, "caractere": "セ", "romanizacao": "se", "progresso": 58 },
-      { "id": 14, "caractere": "ソ", "romanizacao": "so", "progresso": 90 },
-      { "id": 15, "caractere": "タ", "romanizacao": "ta", "progresso": 75 },
-      { "id": 16, "caractere": "チ", "romanizacao": "chi", "progresso": 62 },
-      { "id": 17, "caractere": "ツ", "romanizacao": "tsu", "progresso": 40 },
-      { "id": 18, "caractere": "テ", "romanizacao": "te", "progresso": 61 },
-      { "id": 19, "caractere": "ト", "romanizacao": "to", "progresso": 84 },
-      { "id": 20, "caractere": "ナ", "romanizacao": "na", "progresso": 77 },
-      { "id": 21, "caractere": "ニ", "romanizacao": "ni", "progresso": 95 },
-      { "id": 22, "caractere": "ヌ", "romanizacao": "nu", "progresso": 50 },
-      { "id": 23, "caractere": "ネ", "romanizacao": "ne", "progresso": 68 },
-      { "id": 24, "caractere": "ノ", "romanizacao": "no", "progresso": 80 },
-      { "id": 25, "caractere": "ハ", "romanizacao": "ha", "progresso": 93 },
-      { "id": 26, "caractere": "ヒ", "romanizacao": "hi", "progresso": 73 },
-      { "id": 27, "caractere": "フ", "romanizacao": "fu", "progresso": 38 },
-      { "id": 28, "caractere": "ヘ", "romanizacao": "he", "progresso": 55 },
-      { "id": 29, "caractere": "ホ", "romanizacao": "ho", "progresso": 82 },
-      { "id": 30, "caractere": "マ", "romanizacao": "ma", "progresso": 65 },
-      { "id": 31, "caractere": "ミ", "romanizacao": "mi", "progresso": 47 },
-      { "id": 32, "caractere": "ム", "romanizacao": "mu", "progresso": 75 },
-      { "id": 33, "caractere": "メ", "romanizacao": "me", "progresso": 90 },
-      { "id": 34, "caractere": "モ", "romanizacao": "mo", "progresso": 60 },
-      { "id": 35, "caractere": "ヤ", "romanizacao": "ya", "progresso": 40 },
-      { "id": 36, "caractere": "ユ", "romanizacao": "yu", "progresso": 88 },
-      { "id": 37, "caractere": "ヨ", "romanizacao": "yo", "progresso": 77 },
-      { "id": 38, "caractere": "ラ", "romanizacao": "ra", "progresso": 93 },
-      { "id": 39, "caractere": "リ", "romanizacao": "ri", "progresso": 72 },
-      { "id": 40, "caractere": "ル", "romanizacao": "ru", "progresso": 95 },
-      { "id": 41, "caractere": "レ", "romanizacao": "re", "progresso": 50 },
-      { "id": 42, "caractere": "ロ", "romanizacao": "ro", "progresso": 68 },
-      { "id": 43, "caractere": "ワ", "romanizacao": "wa", "progresso": 80 },
-      { "id": 44, "caractere": "ヲ", "romanizacao": "wo", "progresso": 77 },
-      { "id": 45, "caractere": "ン", "romanizacao": "n", "progresso": 93 },
-      { "id": 46, "caractere": "ガ", "romanizacao": "ga", "progresso": 75 },
-      { "id": 47, "caractere": "ギ", "romanizacao": "gi", "progresso": 56 },
-      { "id": 48, "caractere": "グ", "romanizacao": "gu", "progresso": 79 },
-      { "id": 49, "caractere": "ゲ", "romanizacao": "ge", "progresso": 100 },
-      { "id": 50, "caractere": "ゴ", "romanizacao": "go", "progresso": 81 },
-      { "id": 51, "caractere": "ザ", "romanizacao": "za", "progresso": 100 },
-      { "id": 52, "caractere": "ジ", "romanizacao": "ji", "progresso": 65 },
-      { "id": 53, "caractere": "ズ", "romanizacao": "zu", "progresso": 42 },
-      { "id": 54, "caractere": "ゼ", "romanizacao": "ze", "progresso": 88 },
-      { "id": 55, "caractere": "ゾ", "romanizacao": "zo", "progresso": 55 },
-      { "id": 56, "caractere": "ダ", "romanizacao": "da", "progresso": 90 },
-      { "id": 57, "caractere": "ヂ", "romanizacao": "ji", "progresso": 72 },
-      { "id": 58, "caractere": "ヅ", "romanizacao": "zu", "progresso": 40 },
-      { "id": 59, "caractere": "デ", "romanizacao": "de", "progresso": 61 },
-      { "id": 60, "caractere": "ド", "romanizacao": "do", "progresso": 84 },
-      { "id": 61, "caractere": "バ", "romanizacao": "ba", "progresso": 77 },
-      { "id": 62, "caractere": "ビ", "romanizacao": "bi", "progresso": 95 },
-      { "id": 63, "caractere": "ブ", "romanizacao": "bu", "progresso": 50 },
-      { "id": 64, "caractere": "ベ", "romanizacao": "be", "progresso": 68 },
-      { "id": 65, "caractere": "ボ", "romanizacao": "bo", "progresso": 80 },
-      { "id": 66, "caractere": "パ", "romanizacao": "pa", "progresso": 93 },
-      { "id": 67, "caractere": "ピ", "romanizacao": "pi", "progresso": 73 },
-      { "id": 68, "caractere": "プ", "romanizacao": "pu", "progresso": 38 },
-      { "id": 69, "caractere": "ペ", "romanizacao": "pe", "progresso": 55 },
-      { "id": 70, "caractere": "ポ", "romanizacao": "po", "progresso": 82 }
-    ]
-  }
+  "caracteres": [
+    {
+      "id": 0,
+      "hiragana": {
+        "letra": "お",
+        "progresso": 100
+      },
+      "katakana": {
+        "letra": "オ",
+        "progresso": 100
+      },
+      "romanizacao": "a"
+    },
+    {
+      "id": 1,
+      "hiragana": {
+        "letra": "い",
+        "progresso": 75
+      },
+      "katakana": {
+        "letra": "イ",
+        "progresso": 75
+      },
+      "romanizacao": "i"
+    },
+    {
+      "id": 2,
+      "hiragana": {
+        "letra": "う",
+        "progresso": 33
+      },
+      "katakana": {
+        "letra": "ウ",
+        "progresso": 33
+      },
+      "romanizacao": "u"
+    },
+    {
+      "id": 3,
+      "hiragana": {
+        "letra": "え",
+        "progresso": 15
+      },
+      "katakana": {
+        "letra": "エ",
+        "progresso": 15
+      },
+      "romanizacao": "e"
+    },
+    {
+      "id": 4,
+      "hiragana": {
+        "letra": "お",
+        "progresso": 18
+      },
+      "katakana": {
+        "letra": "オ",
+        "progresso": 18
+      },
+      "romanizacao": "o"
+    },
+    {
+      "id": 5,
+      "hiragana": {
+        "letra": "か",
+        "progresso": 75
+      },
+      "katakana": {
+        "letra": "カ",
+        "progresso": 75
+      },
+      "romanizacao": "ka"
+    },
+    {
+      "id": 6,
+      "hiragana": {
+        "letra": "き",
+        "progresso": 56
+      },
+      "katakana": {
+        "letra": "キ",
+        "progresso": 56
+      },
+      "romanizacao": "ki"
+    },
+    {
+      "id": 7,
+      "hiragana": {
+        "letra": "く",
+        "progresso": 79
+      },
+      "katakana": {
+        "letra": "ク",
+        "progresso": 79
+      },
+      "romanizacao": "ku"
+    },
+    {
+      "id": 8,
+      "hiragana": {
+        "letra": "け",
+        "progresso": 100
+      },
+      "katakana": {
+        "letra": "ケ",
+        "progresso": 100
+      },
+      "romanizacao": "ke"
+    },
+    {
+      "id": 9,
+      "hiragana": {
+        "letra": "こ",
+        "progresso": 81
+      },
+      "katakana": {
+        "letra": "コ",
+        "progresso": 81
+      },
+      "romanizacao": "ko"
+    },
+    {
+      "id": 10,
+      "hiragana": {
+        "letra": "さ",
+        "progresso": 100
+      },
+      "katakana": {
+        "letra": "サ",
+        "progresso": 100
+      },
+      "romanizacao": "sa"
+    },
+    {
+      "id": 11,
+      "hiragana": {
+        "letra": "し",
+        "progresso": 65
+      },
+      "katakana": {
+        "letra": "シ",
+        "progresso": 65
+      },
+      "romanizacao": "shi"
+    },
+    {
+      "id": 12,
+      "hiragana": {
+        "letra": "す",
+        "progresso": 42
+      },
+      "katakana": {
+        "letra": "ス",
+        "progresso": 42
+      },
+      "romanizacao": "su"
+    },
+    {
+      "id": 13,
+      "hiragana": {
+        "letra": "せ",
+        "progresso": 88
+      },
+      "katakana": {
+        "letra": "セ",
+        "progresso": 88
+      },
+      "romanizacao": "se"
+    },
+    {
+      "id": 14,
+      "hiragana": {
+        "letra": "そ",
+        "progresso": 55
+      },
+      "katakana": {
+        "letra": "ソ",
+        "progresso": 55
+      },
+      "romanizacao": "so"
+    },
+    {
+      "id": 15,
+      "hiragana": {
+        "letra": "た",
+        "progresso": 90
+      },
+      "katakana": {
+        "letra": "タ",
+        "progresso": 90
+      },
+      "romanizacao": "ta"
+    },
+    {
+      "id": 16,
+      "hiragana": {
+        "letra": "ち",
+        "progresso": 72
+      },
+      "katakana": {
+        "letra": "チ",
+        "progresso": 72
+      },
+      "romanizacao": "chi"
+    },
+    {
+      "id": 17,
+      "hiragana": {
+        "letra": "つ",
+        "progresso": 40
+      },
+      "katakana": {
+        "letra": "ツ",
+        "progresso": 40
+      },
+      "romanizacao": "tsu"
+    },
+    {
+      "id": 18,
+      "hiragana": {
+        "letra": "て",
+        "progresso": 61
+      },
+      "katakana": {
+        "letra": "テ",
+        "progresso": 61
+      },
+      "romanizacao": "te"
+    },
+    {
+      "id": 19,
+      "hiragana": {
+        "letra": "と",
+        "progresso": 84
+      },
+      "katakana": {
+        "letra": "ト",
+        "progresso": 84
+      },
+      "romanizacao": "to"
+    },
+    {
+      "id": 20,
+      "hiragana": {
+        "letra": "な",
+        "progresso": 77
+      },
+      "katakana": {
+        "letra": "ナ",
+        "progresso": 77
+      },
+      "romanizacao": "na"
+    },
+    {
+      "id": 21,
+      "hiragana": {
+        "letra": "に",
+        "progresso": 95
+      },
+      "katakana": {
+        "letra": "ニ",
+        "progresso": 95
+      },
+      "romanizacao": "ni"
+    },
+    {
+      "id": 22,
+      "hiragana": {
+        "letra": "ぬ",
+        "progresso": 50
+      },
+      "katakana": {
+        "letra": "ヌ",
+        "progresso": 50
+      },
+      "romanizacao": "nu"
+    },
+    {
+      "id": 23,
+      "hiragana": {
+        "letra": "ね",
+        "progresso": 68
+      },
+      "katakana": {
+        "letra": "ネ",
+        "progresso": 68
+      },
+      "romanizacao": "ne"
+    },
+    {
+      "id": 24,
+      "hiragana": {
+        "letra": "の",
+        "progresso": 80
+      },
+      "katakana": {
+        "letra": "ノ",
+        "progresso": 80
+      },
+      "romanizacao": "no"
+    },
+    {
+      "id": 25,
+      "hiragana": {
+        "letra": "は",
+        "progresso": 93
+      },
+      "katakana": {
+        "letra": "ハ",
+        "progresso": 93
+      },
+      "romanizacao": "ha"
+    },
+    {
+      "id": 26,
+      "hiragana": {
+        "letra": "ひ",
+        "progresso": 73
+      },
+      "katakana": {
+        "letra": "ヒ",
+        "progresso": 73
+      },
+      "romanizacao": "hi"
+    },
+    {
+      "id": 27,
+      "hiragana": {
+        "letra": "ふ",
+        "progresso": 38
+      },
+      "katakana": {
+        "letra": "フ",
+        "progresso": 38
+      },
+      "romanizacao": "fu"
+    },
+    {
+      "id": 28,
+      "hiragana": {
+        "letra": "へ",
+        "progresso": 55
+      },
+      "katakana": {
+        "letra": "ヘ",
+        "progresso": 55
+      },
+      "romanizacao": "he"
+    },
+    {
+      "id": 29,
+      "hiragana": {
+        "letra": "ほ",
+        "progresso": 82
+      },
+      "katakana": {
+        "letra": "ホ",
+        "progresso": 82
+      },
+      "romanizacao": "ho"
+    },
+    {
+      "id": 30,
+      "hiragana": {
+        "letra": "ま",
+        "progresso": 65
+      },
+      "katakana": {
+        "letra": "マ",
+        "progresso": 65
+      },
+      "romanizacao": "ma"
+    },
+    {
+      "id": 31,
+      "hiragana": {
+        "letra": "み",
+        "progresso": 47
+      },
+      "katakana": {
+        "letra": "ミ",
+        "progresso": 47
+      },
+      "romanizacao": "mi"
+    },
+    {
+      "id": 32,
+      "hiragana": {
+        "letra": "む",
+        "progresso": 75
+      },
+      "katakana": {
+        "letra": "ム",
+        "progresso": 75
+      },
+      "romanizacao": "mu"
+    },
+    {
+      "id": 33,
+      "hiragana": {
+        "letra": "め",
+        "progresso": 90
+      },
+      "katakana": {
+        "letra": "メ",
+        "progresso": 90
+      },
+      "romanizacao": "me"
+    },
+    {
+      "id": 34,
+      "hiragana": {
+        "letra": "も",
+        "progresso": 60
+      },
+      "katakana": {
+        "letra": "モ",
+        "progresso": 60
+      },
+      "romanizacao": "mo"
+    },
+    {
+      "id": 35,
+      "hiragana": {
+        "letra": "や",
+        "progresso": 40
+      },
+      "katakana": {
+        "letra": "ヤ",
+        "progresso": 40
+      },
+      "romanizacao": "ya"
+    },
+    {
+      "id": 36,
+      "hiragana": {
+        "letra": "ゆ",
+        "progresso": 88
+      },
+      "katakana": {
+        "letra": "ユ",
+        "progresso": 88
+      },
+      "romanizacao": "yu"
+    },
+    {
+      "id": 37,
+      "hiragana": {
+        "letra": "よ",
+        "progresso": 77
+      },
+      "katakana": {
+        "letra": "ヨ",
+        "progresso": 77
+      },
+      "romanizacao": "yo"
+    },
+    {
+      "id": 38,
+      "hiragana": {
+        "letra": "ら",
+        "progresso": 93
+      },
+      "katakana": {
+        "letra": "ラ",
+        "progresso": 93
+      },
+      "romanizacao": "ra"
+    },
+    {
+      "id": 39,
+      "hiragana": {
+        "letra": "り",
+        "progresso": 72
+      },
+      "katakana": {
+        "letra": "リ",
+        "progresso": 72
+      },
+      "romanizacao": "ri"
+    },
+    {
+      "id": 40,
+      "hiragana": {
+        "letra": "る",
+        "progresso": 50
+      },
+      "katakana": {
+        "letra": "ル",
+        "progresso": 50
+      },
+      "romanizacao": "ru"
+    },
+    {
+      "id": 41,
+      "hiragana": {
+        "letra": "れ",
+        "progresso": 68
+      },
+      "katakana": {
+        "letra": "レ",
+        "progresso": 68
+      },
+      "romanizacao": "re"
+    },
+    {
+      "id": 42,
+      "hiragana": {
+        "letra": "ろ",
+        "progresso": 80
+      },
+      "katakana": {
+        "letra": "ロ",
+        "progresso": 80
+      },
+      "romanizacao": "ro"
+    },
+    {
+      "id": 43,
+      "hiragana": {
+        "letra": "わ",
+        "progresso": 93
+      },
+      "katakana": {
+        "letra": "ワ",
+        "progresso": 93
+      },
+      "romanizacao": "wa"
+    },
+    {
+      "id": 44,
+      "hiragana": {
+        "letra": "を",
+        "progresso": 73
+      },
+      "katakana": {
+        "letra": "ヲ",
+        "progresso": 73
+      },
+      "romanizacao": "wo"
+    },
+    {
+      "id": 45,
+      "hiragana": {
+        "letra": "ん",
+        "progresso": 38
+      },
+      "katakana": {
+        "letra": "ン",
+        "progresso": 38
+      },
+      "romanizacao": "n"
+    }
+  ]
 }

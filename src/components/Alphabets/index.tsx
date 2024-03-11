@@ -28,7 +28,7 @@ const Alphabet = () => {
         <Tabs />
         <TabContent
           selectedTab={selectedTab}
-          alphabets={[alfabeto.hiragana, alfabeto.katakana]}
+          alphabets={alfabeto.caracteres}
           showTranslations={showTranslations}
         />
       </div>
