@@ -36,10 +36,10 @@
   font-family: "Madimi One", sans-serif;
 }
 
-::selection,
-::-moz-selection {
-  background: #000;
+::selection {
   color: #fff;
+  background: var(--primary-opaque);
+  -webkit-text-fill-color: #fff !important;
 }
 
 html,
