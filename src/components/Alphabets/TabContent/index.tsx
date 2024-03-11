@@ -27,7 +27,7 @@ const TabContent = ({
   return (
     <div className="flex flex-col">
       <TabOptionsMenu />
-      <div className="grid grid-cols-4 gap-y-6 flex-wrap w-full p-6 justify-items-center sm:grid-cols-5">
+      <div className="grid grid-cols-3 gap-y-6 flex-wrap w-full p-6 justify-items-center xs:grid-cols-4 sm:grid-cols-5">
         {selectedAlphabet.caracteres.map((item) => (
           <div className="flex flex-col gap-3 w-20">
             <div
