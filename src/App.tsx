@@ -23,6 +23,10 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem("theme", String(tema));
+
+    tema === "dark"
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark");
   }, [tema]);
 
   useEffect(() => {
