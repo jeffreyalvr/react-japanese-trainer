@@ -38,7 +38,7 @@ const TabContent = ({
                 {item.caractere}
               </div>
               {showTranslations ? (
-                <div className="text-sm text-[var(--primary-opaque)] dark:text-[var(--fg-dark)]">
+                <div className="text-sm text-[var(--primary-opaque)] dark:text-[var(--primary-opaque)]">
                   {item.traducao}
                 </div>
               ) : null}
