@@ -9,7 +9,7 @@ type AlphabetStructure = {
 type AlphabetItem = {
   id: number;
   caractere: string;
-  traducao: string;
+  romanizacao: string;
   progresso: number;
 };
 
@@ -39,7 +39,7 @@ const TabContent = ({
               </div>
               {showTranslations ? (
                 <div className="text-sm text-[var(--primary-opaque)] dark:text-[var(--primary-opaque)]">
-                  {item.traducao}
+                  {item.romanizacao}
                 </div>
               ) : null}
             </div>
