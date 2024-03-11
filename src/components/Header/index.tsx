@@ -15,7 +15,7 @@ const Header = () => {
     <header className="flex flex-col gap-10 w-full justify-between py-10 sm:flex-row">
       <div className="flex flex-col items-center justify-center gap-2 text-center sm:flex-row sm:gap-4">
         <div className="rounded-md p-2 size-12 sm:size-[64px] bg-[var(--border-box-light)] dark:bg-[var(--border-box-dark)]">
-          <img src={logo_img} alt="あ" className="size-max" />
+          <img src={logo_img} alt="あ" className="size-full" />
         </div>
         <h1 className="text-2xl sm:text-3xl">Japanese Trainer</h1>
       </div>
