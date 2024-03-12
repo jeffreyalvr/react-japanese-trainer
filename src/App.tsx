@@ -30,7 +30,7 @@ const App = () => {
   }, [tema]);
 
   useEffect(() => {
-    localStorage.setItem("show_translations", String(showRomanization));
+    localStorage.setItem("show_romanization", String(showRomanization));
   }, [showRomanization]);
 
   const toggleTema = () => {

@@ -4,12 +4,12 @@ import Tabs from "./Tabs";
 import TabContent from "./TabContent";
 
 import { TabContext } from "../../Contexts/TabContext";
-import { TranslationsContext } from "../../Contexts/RomanizationContext";
+import { RomanizationContext } from "../../Contexts/RomanizationContext";
 
 import alfabeto from "./alfabeto.json";
 
 const Alphabet = () => {
-  const { showTranslations } = useContext(TranslationsContext);
+  const { showRomanization } = useContext(RomanizationContext);
 
   const [selectedTab, setSelectedTab] = useState(0);
 
@@ -29,7 +29,7 @@ const Alphabet = () => {
         <TabContent
           selectedTab={selectedTab}
           alphabets={alfabeto.caracteres}
-          showTranslations={showTranslations}
+          showRomanization={showRomanization}
         />
       </div>
     </TabContext.Provider>

@@ -17,11 +17,11 @@ type AlphabetBlock = {
 const TabContent = ({
   selectedTab,
   alphabets,
-  showTranslations,
+  showRomanization,
 }: {
   selectedTab: number;
   alphabets: AlphabetList;
-  showTranslations: boolean;
+  showRomanization: boolean;
 }) => {
   let selectedAlphabet: AlphabetBlock;
   return (
@@ -39,7 +39,7 @@ const TabContent = ({
                 <div className="text-xl font-bold text-[var(--fg-light) dark:text-[var(--fg-dark)]">
                   {selectedAlphabet.letra}
                 </div>
-                {showTranslations ? (
+                {showRomanization ? (
                   <div className="text-sm text-[var(--primary-opaque)] dark:text-[var(--primary-opaque)]">
                     {item.romanizacao}
                   </div>
