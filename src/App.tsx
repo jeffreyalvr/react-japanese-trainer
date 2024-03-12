@@ -5,19 +5,19 @@ import { useEffect, useState } from "react";
 import Routes from "./routes";
 
 import { ThemeContext } from "./Contexts/ThemeContext";
-import { TranslationsContext } from "./Contexts/TranslationsContext";
+import { RomanizationContext } from "./Contexts/RomanizationContext";
 
 const App = () => {
   const theme_value = localStorage.getItem("theme");
-  const show_translations_value = localStorage.getItem("show_translations");
+  const show_romanization_value = localStorage.getItem("show_romanization");
 
   const [tema, setTema] = useState(
     theme_value !== null ? theme_value : "light"
   );
 
-  const [showTranslations, setShowTranslations] = useState(
-    show_translations_value !== null
-      ? JSON.parse(show_translations_value)
+  const [showRomanization, setShowRomanization] = useState(
+    show_romanization_value !== null
+      ? JSON.parse(show_romanization_value)
       : true
   );
 
@@ -30,31 +30,31 @@ const App = () => {
   }, [tema]);
 
   useEffect(() => {
-    localStorage.setItem("show_translations", String(showTranslations));
-  }, [showTranslations]);
+    localStorage.setItem("show_translations", String(showRomanization));
+  }, [showRomanization]);
 
   const toggleTema = () => {
     tema === "light" ? setTema("dark") : setTema("light");
   };
 
-  const toggleTranslations = () => {
-    showTranslations == false
-      ? setShowTranslations(true)
-      : setShowTranslations(false);
+  const toggleRomanization = () => {
+    showRomanization == false
+      ? setShowRomanization(true)
+      : setShowRomanization(false);
   };
 
   return (
     <ThemeContext.Provider value={{ tema, toggleTema }}>
-      <TranslationsContext.Provider
+      <RomanizationContext.Provider
         value={{
-          showTranslations: Boolean(showTranslations),
-          toggleTranslations,
+          showRomanization: Boolean(showRomanization),
+          toggleRomanization,
         }}
       >
         <div className="container flex flex-col gap-2 mx-auto md:w-[40rem]">
           <Routes />
         </div>
-      </TranslationsContext.Provider>
+      </RomanizationContext.Provider>
     </ThemeContext.Provider>
   );
 };

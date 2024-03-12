@@ -4,7 +4,7 @@ import Tabs from "./Tabs";
 import TabContent from "./TabContent";
 
 import { TabContext } from "../../Contexts/TabContext";
-import { TranslationsContext } from "../../Contexts/TranslationsContext";
+import { TranslationsContext } from "../../Contexts/RomanizationContext";
 
 import alfabeto from "./alfabeto.json";
 

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../Contexts/ThemeContext";
-import { TranslationsContext } from "../../Contexts/TranslationsContext";
+import { RomanizationContext } from "../../Contexts/RomanizationContext";
 
 import logo_img from "../../assets/icons/logo.png";
 import toggle_on_img from "../../assets/icons/toggle_on.png";
@@ -8,8 +8,8 @@ import toggle_off_img from "../../assets/icons/toggle_off.png";
 
 const Header = () => {
   const { tema, toggleTema } = useContext(ThemeContext);
-  const { showTranslations, toggleTranslations } =
-    useContext(TranslationsContext);
+  const { showRomanization, toggleRomanization } =
+    useContext(RomanizationContext);
 
   return (
     <header className="flex flex-col gap-10 w-full justify-between py-10 sm:flex-row">
@@ -33,14 +33,14 @@ const Header = () => {
           Usar modo escuro
         </button>
         <button
-          onClick={toggleTranslations}
+          onClick={toggleRomanization}
           className="flex flex-row gap-2 items-center text-[var(--primary-light)] hover:brightness-125"
         >
           <img
-            src={showTranslations ? toggle_on_img : toggle_off_img}
+            src={showRomanization ? toggle_on_img : toggle_off_img}
             alt="Toggle"
           />
-          Exibir traduções
+          Exibir romanização
         </button>
       </div>
     </header>
