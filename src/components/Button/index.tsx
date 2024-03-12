@@ -1,7 +1,16 @@
-type ButtonProps = {
+import { Link } from "react-router-dom";
+
+type DefaultProps = {
   text: string;
   title?: string;
+};
+
+type ButtonProps = DefaultProps & {
   variant: "primary" | "secondary";
+};
+
+type LinkButtonProps = DefaultProps & {
+  route: string;
 };
 
 const Button = ({ text, title, variant }: ButtonProps) => {
@@ -22,4 +31,16 @@ const Button = ({ text, title, variant }: ButtonProps) => {
   );
 };
 
-export default Button;
+const LinkButton = ({ text, title, route }: LinkButtonProps) => {
+  return (
+    <Link
+      to={route}
+      title={title || ""}
+      className="border-2 rounded-md px-4 py-1 cursor-pointer bg-[#6562fc] border-transparent hover:bg-[#7472ff] text-white"
+    >
+      {text || "botão"}
+    </Link>
+  );
+};
+
+export { Button, LinkButton };
