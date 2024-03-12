@@ -8,7 +8,9 @@ const NotFound = () => {
     <>
       <Header />
       <Box title="Página não encontrada">
-        <span>A página procurada não está em nosso sitema.</span>
+        <span className="text-[var(--fg-light)] dark:text-[var(--fg-dark)]">
+          A página procurada não está em nosso sitema.
+        </span>
         <LinkButton text="Voltar ao início" route="/" />
       </Box>
       <Footer />
