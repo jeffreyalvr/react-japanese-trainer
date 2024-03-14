@@ -6,7 +6,7 @@ import Modal from "../../components/Modal";
 const Home = () => {
   return (
     <>
-      <Modal />
+      <Modal isOpen={true} />
       <div className="container flex flex-col gap-2 mx-auto md:w-[40rem]">
         <Header />
         <Alphabet />

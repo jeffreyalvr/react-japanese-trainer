@@ -5,7 +5,7 @@ const ModalContent = () => {
         <h1 className="text-8xl text-[var(--primary)]">す</h1>
       </div>
       <div className="flex flex-row gap-4 h-max items-center">
-        <span className="text-4xl h-full text-[var(--fg-dark)] dark:text-white">
+        <span className="text-4xl h-full text-[var(--fg-light)] dark:text-white">
           su
         </span>
         <svg
@@ -19,7 +19,7 @@ const ModalContent = () => {
           stroke-linejoin="miter"
           stroke-width="1"
           viewBox="0 0 24 24"
-          className="size-full cursor-pointer stroke-[--primary-opaque] hover:stroke-white transition-colors"
+          className="size-full cursor-pointer stroke-[--primary-opaque] hover:stroke-[var(--primary)] dark:hover:stroke-white transition-colors"
         >
           <title id="visibility" />
           <path d="M22 12C22 12 19 18 12 18C5 18 2 12 2 12C2 12 5 6 12 6C19 6 22 12 22 12Z" />
