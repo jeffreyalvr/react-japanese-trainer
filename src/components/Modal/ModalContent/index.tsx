@@ -1,7 +1,7 @@
 const ModalContent = () => {
   return (
     <div className="flex flex-col gap-8 items-center justify-center w-full">
-      <div className="flex flex-col items-center justify-center rounded-md size-12 sm:size-max p-4 bg-[var(--border-box-light)] dark:bg-[var(--border-box-dark)]">
+      <div className="flex flex-col size-max items-center justify-center rounded-md sm:size-max p-4 bg-[var(--border-box-light)] dark:bg-[var(--border-box-dark)]">
         <h1 className="text-8xl text-[var(--primary)]">す</h1>
       </div>
       <div className="flex flex-row gap-4 h-max items-center">
