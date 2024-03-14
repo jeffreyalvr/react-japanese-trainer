@@ -12,7 +12,6 @@ type ButtonProps = DefaultProps & {
 type IconButtonProps = DefaultProps &
   ButtonProps & {
     icon: string;
-    fillColor: string;
   };
 
 type LinkButtonProps = DefaultProps & {
@@ -39,7 +38,7 @@ const Button = ({ text, title, variant }: ButtonProps) => {
   );
 };
 
-const IconButton = ({ title, variant, icon, fillColor }: IconButtonProps) => {
+const IconButton = ({ title, variant, icon }: IconButtonProps) => {
   return (
     <button
       title={title || ""}
@@ -47,7 +46,7 @@ const IconButton = ({ title, variant, icon, fillColor }: IconButtonProps) => {
         variant == "primary" ? primaryCss : secondaryCss
       }`}
     >
-      <svg src={icon} className={`size-full fill-[${fillColor}]`} />
+      <img src={icon} className={`size-full`} />
     </button>
   );
 };
