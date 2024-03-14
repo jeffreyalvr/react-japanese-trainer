@@ -19,7 +19,8 @@ type LinkButtonProps = DefaultProps & {
   route: string;
 };
 
-const defaultCss = "border-2 rounded-md px-4 py-1 h-[36px] cursor-pointer";
+const defaultCss =
+  "border-2 rounded-md px-4 py-1 h-[36px] cursor-pointer transition-colors";
 const primaryCss =
   "bg-[#6562fc] border-transparent hover:bg-[#7472ff] text-white";
 const secondaryCss =
@@ -46,7 +47,7 @@ const IconButton = ({ title, variant, icon, fillColor }: IconButtonProps) => {
         variant == "primary" ? primaryCss : secondaryCss
       }`}
     >
-      <svg src={icon} alt="Ícone" className={`size-full fill-[${fillColor}]`} />
+      <svg src={icon} className={`size-full fill-[${fillColor}]`} />
     </button>
   );
 };

@@ -34,7 +34,7 @@ const TabContent = ({
             <div className="flex flex-col gap-3 w-20">
               <div
                 key={item.id}
-                className="rounded-lg flex flex-col items-center justify-center p-4 w-full h-20 [&>*]:hover:text-white border-4 border-[var(--border-box-light)] bg-[var(--bg-box-light)] dark:border-[var(--border-box-dark)] dark:bg-[var(--bg-box-dark)] cursor-pointer hover:bg-[var(--primary)]"
+                className="rounded-lg flex flex-col items-center justify-center p-4 w-full h-20 [&>*]:hover:text-white border-4 border-[var(--border-box-light)] bg-[var(--bg-box-light)] dark:border-[var(--border-box-dark)] dark:bg-[var(--bg-box-dark)] cursor-pointer hover:bg-[var(--primary)] transition-colors"
               >
                 <div className="text-xl font-bold text-[var(--fg-light) dark:text-[var(--fg-dark)]">
                   {selectedAlphabet.letra}

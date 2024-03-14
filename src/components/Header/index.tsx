@@ -27,7 +27,7 @@ const Header = () => {
         <button
           onClick={toggleTema}
           title="Clique para alterar o tema"
-          className="flex flex-row gap-2 items-center text-[var(--primary-light)] hover:brightness-125"
+          className="flex flex-row gap-2 items-center text-[var(--primary-light)] hover:brightness-125 transition"
         >
           <img
             src={tema === "dark" ? toggle_on_img : toggle_off_img}
@@ -37,7 +37,7 @@ const Header = () => {
         </button>
         <button
           onClick={toggleRomanization}
-          className="flex flex-row gap-2 items-center text-[var(--primary-light)] hover:brightness-125"
+          className="flex flex-row gap-2 items-center text-[var(--primary-light)] hover:brightness-125 transition"
         >
           <img
             src={showRomanization ? toggle_on_img : toggle_off_img}
