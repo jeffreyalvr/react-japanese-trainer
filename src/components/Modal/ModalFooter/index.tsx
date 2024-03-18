@@ -10,7 +10,7 @@ const ModalFooter = () => {
       <ActionButton
         variant="secondary"
         text="Fechar"
-        action={toggleLearningModalActive}
+        action={() => toggleLearningModalActive(false)}
       />
       <div className="flex flex-row gap-2 sm:gap-6">
         <Button
