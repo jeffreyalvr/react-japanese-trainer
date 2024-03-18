@@ -41,15 +41,13 @@ const App = () => {
   };
 
   const toggleRomanization = () => {
-    showRomanization == false
-      ? setShowRomanization(true)
-      : setShowRomanization(false);
+    if (showRomanization == false) setShowRomanization(true);
+    else setShowRomanization(false);
   };
 
   const toggleLearningModalActive = () => {
-    learningModalActive == false
-      ? setLearningModalActive(true)
-      : setLearningModalActive(false);
+    if (learningModalActive == false) setLearningModalActive(true);
+    else setLearningModalActive(false);
   };
 
   return (
