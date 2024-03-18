@@ -9,6 +9,11 @@ type ButtonProps = DefaultProps & {
   variant: "primary" | "secondary";
 };
 
+type ActionButtonProps = DefaultProps &
+  ButtonProps & {
+    action: React.MouseEventHandler<HTMLButtonElement>;
+  };
+
 type IconButtonProps = DefaultProps &
   ButtonProps & {
     icon: string;
@@ -32,6 +37,20 @@ const Button = ({ text, title, variant }: ButtonProps) => {
       className={`${defaultCss} ${
         variant == "primary" ? primaryCss : secondaryCss
       }`}
+    >
+      {text || "botão"}
+    </button>
+  );
+};
+
+const ActionButton = ({ text, title, variant, action }: ActionButtonProps) => {
+  return (
+    <button
+      title={title || ""}
+      className={`${defaultCss} ${
+        variant == "primary" ? primaryCss : secondaryCss
+      }`}
+      onClick={action}
     >
       {text || "botão"}
     </button>
@@ -63,4 +82,4 @@ const LinkButton = ({ text, title, route }: LinkButtonProps) => {
   );
 };
 
-export { Button, IconButton, LinkButton };
+export { Button, ActionButton, IconButton, LinkButton };
