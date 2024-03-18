@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="flex flex-col gap-10 w-full justify-between py-10 sm:flex-row">
-      <div className="flex flex-col items-center justify-center gap-2 text-center sm:flex-row sm:gap-4">
+      <div className="flex flex-col items-center justify-center gap-2 text-center sm:flex-row sm:gap-4 select-none">
         <div className="flex flex-col items-center justify-center rounded-md size-12 sm:size-[64px] bg-[var(--border-box-light)] dark:bg-[var(--border-box-dark)]">
           <span className="font-bold text-3xl text-transparent bg-gradient-to-br from-[var(--primary)] to-[var(--gold)] bg-clip-text sm:text-[2.5rem]">
             あ
