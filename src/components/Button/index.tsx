@@ -24,7 +24,7 @@ type LinkButtonProps = DefaultProps & {
 };
 
 const defaultCss =
-  "border-2 rounded-md px-4 py-1 h-[36px] cursor-pointer transition-colors";
+  "border-2 rounded-md px-4 py-1 h-[36px] cursor-pointer transition-colors select-none";
 const primaryCss =
   "bg-[#6562fc] border-transparent hover:bg-[#7472ff] text-white";
 const secondaryCss =
