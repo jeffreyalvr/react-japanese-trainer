@@ -1,14 +1,12 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../Contexts/ThemeContext";
-import { RomanizationContext } from "../../Contexts/RomanizationContext";
+import { useThemeContext } from "../../Contexts/ThemeContext";
+import { useRomanizationContext } from "../../Contexts/RomanizationContext";
 
 import toggle_on_img from "../../assets/icons/toggle_on.png";
 import toggle_off_img from "../../assets/icons/toggle_off.png";
 
 const Header = () => {
-  const { tema, toggleTema } = useContext(ThemeContext);
-  const { showRomanization, toggleRomanization } =
-    useContext(RomanizationContext);
+  const { tema, toggleTema } = useThemeContext();
+  const { showRomanization, toggleRomanization } = useRomanizationContext();
 
   return (
     <header className="flex flex-col gap-10 w-full justify-between py-10 sm:flex-row">

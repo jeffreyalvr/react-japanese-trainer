@@ -1,6 +1,4 @@
-import { useContext } from "react";
-
-import { TabContext } from "../../../Contexts/TabContext";
+import { useTabContext } from "../../../Contexts/TabContext";
 
 const Tabs = () => {
   const tabs = [
@@ -8,7 +6,7 @@ const Tabs = () => {
     { id: 1, texto: "Katakana", progresso: "0%" },
   ];
 
-  const { selectedTab, switchTab } = useContext(TabContext);
+  const { selectedTab, switchTab } = useTabContext();
 
   return (
     <div className="flex flex-col flex-wrap w-full border-b-2 border-[var(--border-box-light)] dark:border-[var(--border-box-dark)] sm:flex-row">

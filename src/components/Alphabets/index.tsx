@@ -1,15 +1,15 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 
 import Tabs from "./Tabs";
 import TabContent from "./TabContent";
 
 import { TabContext } from "../../Contexts/TabContext";
-import { RomanizationContext } from "../../Contexts/RomanizationContext";
+import { useRomanizationContext } from "../../Contexts/RomanizationContext";
 
 import alfabeto from "./alfabeto.json";
 
 const Alphabet = () => {
-  const { showRomanization } = useContext(RomanizationContext);
+  const { showRomanization } = useRomanizationContext();
 
   const [selectedTab, setSelectedTab] = useState(0);
 
