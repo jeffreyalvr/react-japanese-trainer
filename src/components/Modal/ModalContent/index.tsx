@@ -19,7 +19,7 @@ const ModalContent = () => {
           stroke-linejoin="miter"
           stroke-width="1"
           viewBox="0 0 24 24"
-          className="size-[24px] cursor-pointer stroke-[--primary-opaque] hover:stroke-[var(--primary)] dark:hover:stroke-white transition-colors"
+          className="size-[48px] cursor-pointer stroke-[--primary-opaque] hover:stroke-[var(--primary)] dark:hover:stroke-white transition-colors"
         >
           <title id="visibility" />
           <path d="M22 12C22 12 19 18 12 18C5 18 2 12 2 12C2 12 5 6 12 6C19 6 22 12 22 12Z" />
