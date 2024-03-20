@@ -1,20 +1,56 @@
+type paddingType = {
+  paddingX: number;
+  paddingY: number;
+};
+
 const Box = ({
+  gap,
+  padding,
+  children,
+}: {
+  gap?: number;
+  padding?: paddingType;
+  children: React.ReactNode;
+}) => {
+  const styles = {
+    padding: {
+      padding: `${padding?.paddingY || 0}rem ${padding?.paddingX || 0}rem`,
+    },
+    gap: {
+      gap: `${gap || 0}rem`,
+    },
+  };
+  return (
+    <div
+      className="rounded-lg w-full flex flex-col border-4 border-[var(--border-box-light)] bg-[var(--bg-box-light)] dark:border-[var(--border-box-dark)] dark:bg-[var(--bg-box-dark)] sm:w-[640px]"
+      style={{ ...styles.padding, ...styles.gap }}
+    >
+      {children}
+    </div>
+  );
+};
+
+const BoxOverride = ({
   title,
+  gap,
+  padding,
   children,
 }: {
   title: string;
+  gap?: number;
+  padding?: paddingType;
   children: React.ReactNode;
 }) => {
   return (
-    <div className="rounded-lg w-full flex flex-col gap-6 p-10 border-4 border-[var(--border-box-light)] bg-[var(--bg-box-light)] dark:border-[var(--border-box-dark)] dark:bg-[var(--bg-box-dark)]">
+    <Box gap={gap} padding={padding}>
       <div className="pb-4 border-b-2 border-dashed border-[var(--border-box-light)] dark:border-[var(--border-box-dark)]">
         <h1 className="text-3xl text-[var(--primary)] text-center">{title}</h1>
       </div>
       <div className="flex flex-col gap-4 items-center text-center">
         {children}
       </div>
-    </div>
+    </Box>
   );
 };
 
-export default Box;
+export { Box, BoxOverride };

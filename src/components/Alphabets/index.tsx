@@ -3,6 +3,8 @@ import { useState } from "react";
 import Tabs from "./Tabs";
 import TabContent from "./TabContent";
 
+import { Box } from "../Box";
+
 import { TabContext } from "../../Contexts/TabContext";
 import { useRomanizationContext } from "../../Contexts/RomanizationContext";
 
@@ -24,14 +26,14 @@ const Alphabet = () => {
         switchTab,
       }}
     >
-      <div className="rounded-lg flex flex-col w-full border-4 border-[var(--border-box-light)] bg-[var(--bg-box-light)] overflow-hidden dark:border-[var(--border-box-dark)] dark:bg-[var(--bg-box-dark)]">
+      <Box>
         <Tabs />
         <TabContent
           selectedTab={selectedTab}
           alphabets={alfabeto.caracteres}
           showRomanization={showRomanization}
         />
-      </div>
+      </Box>
     </TabContext.Provider>
   );
 };
