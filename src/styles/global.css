@@ -15,7 +15,8 @@
   --bg-tab: transparent;
   --bg-tab-selected: #383148;
   --bg-tab-hover: #433b57;
-  --modal-transparent-bg: rgba(17, 17, 17, 0.943);
+  --modal-light-bg: rgba(59, 59, 59, 0.943);
+  --modal-dark-bg: rgba(17, 17, 17, 0.943);
 
   /* tema light */
   --bg-light: #edf0ff;

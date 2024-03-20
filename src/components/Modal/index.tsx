@@ -4,7 +4,7 @@ import { Box } from "../Box";
 
 const Modal = ({ isOpen }: { isOpen: boolean }) => {
   return isOpen ? (
-    <div className="absolute flex flex-col gap-2 justify-center items-center size-full bg-[var(--modal-transparent-bg)] backdrop-blur-sm">
+    <div className="absolute flex flex-col gap-2 justify-center items-center size-full bg-[var(--modal-light-bg)] dark:bg-[var(--modal-dark-bg)] backdrop-blur-sm">
       <Box>
         <div className="flex flex-col items-center gap-4 px-2 py-4 sm:flex-row sm:justify-between sm:px-10">
           <div className="flex flex-row gap-4">
