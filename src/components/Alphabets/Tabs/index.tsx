@@ -17,7 +17,7 @@ const Tabs = () => {
           className={`
           flex flex-row gap-2 px-10 py-4 border-b-2 border-[var(--border-box-light)] dark:border-[var(--border-box-dark)]
           cursor-pointer bg-[var(--bg-tab)] text-[var(--fg-light)] dark:text-[var(--fg-dark)] hover:bg-[var(--bg-tab-hover)]
-          hover:text-white sm:border-r-2 sm:border-b-0 transition-colors
+          hover:text-white sm:border-r-2 sm:border-b-0
           ${
             selectedTab === tab.id
               ? "bg-[var(--bg-tab-selected)] text-white"
