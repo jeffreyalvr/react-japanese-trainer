@@ -75,7 +75,7 @@ const LinkButton = ({ text, title, route }: LinkButtonProps) => {
     <Link
       to={route}
       title={title || ""}
-      className={`${defaultCss + primaryCss}`}
+      className={`${defaultCss} ${primaryCss}`}
     >
       {text || "botão"}
     </Link>
