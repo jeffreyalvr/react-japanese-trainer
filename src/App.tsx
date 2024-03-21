@@ -6,7 +6,7 @@ import Routes from "./routes";
 
 import { ThemeContext } from "./Contexts/ThemeContext";
 import { RomanizationContext } from "./Contexts/RomanizationContext";
-import { LearningModalContext } from "./Contexts/LearningModalContext";
+import { ModalContext } from "./Contexts/ModalContext";
 
 const App = () => {
   const theme_value = localStorage.getItem("theme");
@@ -22,7 +22,7 @@ const App = () => {
       : true
   );
 
-  const [learningModalActive, setLearningModalActive] = useState(false);
+  const [modalActive, setModalActive] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("theme", String(tema));
@@ -45,9 +45,9 @@ const App = () => {
     else setShowRomanization(false);
   };
 
-  const toggleLearningModalActive = () => {
-    if (learningModalActive == false) setLearningModalActive(true);
-    else setLearningModalActive(false);
+  const toggleModalActive = () => {
+    if (modalActive == false) setModalActive(true);
+    else setModalActive(false);
   };
 
   return (
@@ -58,14 +58,14 @@ const App = () => {
           toggleRomanization,
         }}
       >
-        <LearningModalContext.Provider
+        <ModalContext.Provider
           value={{
-            learningModalActive: Boolean(learningModalActive),
-            toggleLearningModalActive,
+            modalActive: Boolean(modalActive),
+            toggleModalActive,
           }}
         >
           <Routes />
-        </LearningModalContext.Provider>
+        </ModalContext.Provider>
       </RomanizationContext.Provider>
     </ThemeContext.Provider>
   );

@@ -3,14 +3,14 @@ import Footer from "../../components/Footer";
 import Alphabet from "../../components/Alphabets";
 import Modal from "../../components/Modal";
 
-import { useLearningModalContext } from "../../Contexts/LearningModalContext";
+import { useModalContext } from "../../Contexts/ModalContext";
 
 const Home = () => {
-  const { learningModalActive } = useLearningModalContext();
+  const { modalActive } = useModalContext();
 
   return (
     <>
-      <Modal isOpen={learningModalActive} />
+      <Modal isOpen={modalActive} />
       <div className="container flex flex-col gap-2 mx-auto md:w-[40rem]">
         <Header />
         <Alphabet />

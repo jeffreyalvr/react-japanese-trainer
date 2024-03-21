@@ -37,7 +37,7 @@ const ModalContent = () => {
               exibirRomanizacao ? "visible" : "invisible"
             }`}
           >
-            hachi
+            su
           </span>
         </div>
         <svg
