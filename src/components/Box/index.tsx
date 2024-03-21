@@ -1,3 +1,5 @@
+import { Title } from "../Text";
+
 type paddingType = {
   paddingX: number;
   paddingY: number;
@@ -44,7 +46,7 @@ const BoxOverride = ({
   return (
     <Box gap={gap} padding={padding}>
       <div className="pb-4 border-b-2 border-dashed border-[var(--border-box-light)] dark:border-[var(--border-box-dark)]">
-        <h1 className="text-3xl text-[var(--primary)] text-center">{title}</h1>
+        <Title text={title} />
       </div>
       <div className="flex flex-col gap-4 items-center text-center">
         {children}
