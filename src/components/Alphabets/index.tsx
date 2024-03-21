@@ -29,7 +29,6 @@ const Alphabet = () => {
       <Box>
         <Tabs />
         <TabContent
-          selectedTab={selectedTab}
           alphabets={alfabeto.caracteres}
           showRomanization={showRomanization}
         />

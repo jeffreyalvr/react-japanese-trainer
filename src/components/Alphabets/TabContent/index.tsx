@@ -1,3 +1,5 @@
+import { useTabContext } from "../../../Contexts/TabContext";
+
 import TabOptionsMenu from "../TabOptionsMenu";
 
 type AlphabetList = AlphabetItem[];
@@ -15,15 +17,15 @@ type AlphabetBlock = {
 };
 
 const TabContent = ({
-  selectedTab,
   alphabets,
   showRomanization,
 }: {
-  selectedTab: number;
   alphabets: AlphabetList;
   showRomanization: boolean;
 }) => {
   let selectedAlphabet: AlphabetBlock;
+  const { selectedTab } = useTabContext();
+
   return (
     <div className="flex flex-col">
       <TabOptionsMenu />
