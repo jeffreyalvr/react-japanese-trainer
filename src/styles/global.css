@@ -47,6 +47,8 @@
 html,
 body {
   background: var(--bg-dark);
+  min-height: 100%;
+  height: 100dvh;
 }
 
 p,
