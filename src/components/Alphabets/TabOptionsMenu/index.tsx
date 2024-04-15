@@ -10,7 +10,9 @@ const TabOptionsMenu = () => {
         text="Praticar alfabeto"
         variant="primary"
         title="Praticar todos os itens"
-        action={() => toggleModalActive(true)}
+        action={() =>
+          toggleModalActive({ status: true, type: "LEARNING_MODAL" })
+        }
       />
       <Button
         text="Praticar enfraquecidos"
