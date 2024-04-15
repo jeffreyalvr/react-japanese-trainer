@@ -12,7 +12,8 @@ const DetailsModal = () => {
         paddingY: 2.5,
       }}
     >
-      <ModalContent />
+      {/* TODO: receber id selecionado do caractere automaticamente */}
+      <ModalContent caractereIdSelecionado={4} />
       <ModalFooter />
     </Box>
   );
