@@ -10,13 +10,10 @@ const ModalFooter = () => {
       <ActionButton
         variant="secondary"
         text="Fechar"
-        action={() => toggleModalActive(false)}
+        action={() => toggleModalActive({ status: false })}
       />
       <div className="flex flex-row gap-2 sm:gap-6">
-        <Button
-          variant="secondary"
-          text="Resetar progresso"
-        />
+        <Button variant="secondary" text="Resetar progresso" />
       </div>
     </footer>
   );
