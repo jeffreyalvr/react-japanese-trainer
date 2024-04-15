@@ -1,4 +1,4 @@
-import { ActionButton, Button } from "../../Button";
+import { ActionButton } from "../../Button";
 
 import { useModalContext } from "../../../Contexts/ModalContext";
 
@@ -14,10 +14,13 @@ const TabOptionsMenu = () => {
           toggleModalActive({ status: true, type: "LEARNING_MODAL" })
         }
       />
-      <Button
+      <ActionButton
         text="Praticar enfraquecidos"
         variant="secondary"
         title="Praticar items com aprendizado abaixo de 75%"
+        action={() =>
+          toggleModalActive({ status: true, type: "LEARNING_MODAL" })
+        }
       />
     </div>
   );
