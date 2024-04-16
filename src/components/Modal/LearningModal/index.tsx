@@ -19,7 +19,7 @@ const LearningModal = () => {
         }}
       >
         {/* gap-10 px-2 py-10 sm:px-10 */}
-        <ModalContent />
+        <ModalContent caractereIdSelecionado={6} />
         <ModalFooter />
       </Box>
     </>
