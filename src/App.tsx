@@ -44,16 +44,25 @@ const App = () => {
   };
 
   const toggleRomanization = () => {
-    if (showRomanization == false) setShowRomanization(true);
-    else setShowRomanization(false);
+    showRomanization == false
+      ? setShowRomanization(true)
+      : setShowRomanization(false);
   };
 
   const toggleModalActive = () => {
-    if (modalActive == false) setModalActive(true);
-    else setModalActive(false);
+    modalActive == false ? setModalActive(true) : setModalActive(false);
 
-    if (modalType === "LEARNING_MODAL") setModalType("LEARNING_MODAL");
-    else setModalType("DETAILS_MODAL");
+    switch (modalType) {
+      case "LEARNING_MODAL":
+        setModalType("LEARNING_MODAL");
+        break;
+      case "DETAILS_MODAL":
+        setModalType("DETAILS_MODAL");
+        break;
+      default:
+        setModalType("LEARNING_MODAL");
+        break;
+    }
   };
 
   return (
