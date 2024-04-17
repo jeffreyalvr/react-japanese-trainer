@@ -25,7 +25,7 @@ const App = () => {
   type modalType = "LEARNING_MODAL" | "DETAILS_MODAL";
 
   const [modalActive, setModalActive] = useState(false);
-  const [modalType, setModalType] = useState("LEARNING_MODAL");
+  const [modalType, setModalType] = useState<modalType>();
 
   useEffect(() => {
     localStorage.setItem("theme", String(tema));
