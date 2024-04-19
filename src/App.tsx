@@ -49,8 +49,8 @@ const App = () => {
       : setShowRomanization(false);
   };
 
-  const toggleModalActive = () => {
-    modalActive == false ? setModalActive(true) : setModalActive(false);
+  const toggleModalActive = ({ modalType }: { modalType?: Type }) => {
+    modalActive === false ? setModalActive(true) : setModalActive(false);
 
     switch (modalType) {
       case "LEARNING_MODAL":
