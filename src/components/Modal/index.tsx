@@ -12,7 +12,11 @@ const Modal = () => {
       case "DETAILS_MODAL":
         return <DetailsModal />;
       default:
-        return "Nenhum componente definido.";
+        return (
+          <span className="text-[var(--fg-light)] dark:text-white">
+            Nenhum componente definido.
+          </span>
+        );
     }
   };
 
