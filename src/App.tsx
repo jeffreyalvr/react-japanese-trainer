@@ -22,10 +22,10 @@ const App = () => {
       : true
   );
 
-  type modalType = "LEARNING_MODAL" | "DETAILS_MODAL";
+  type Type = "LEARNING_MODAL" | "DETAILS_MODAL";
 
   const [modalActive, setModalActive] = useState(false);
-  const [modalType, setModalType] = useState<modalType>();
+  const [modalType, setModalType] = useState<Type>();
 
   useEffect(() => {
     localStorage.setItem("theme", String(tema));
@@ -76,7 +76,7 @@ const App = () => {
         <ModalContext.Provider
           value={{
             modalActive: Boolean(modalActive),
-            type: modalType as modalType,
+            type: modalType as Type,
             toggleModalActive,
           }}
         >

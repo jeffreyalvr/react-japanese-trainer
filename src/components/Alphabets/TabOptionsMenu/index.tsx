@@ -11,7 +11,7 @@ const TabOptionsMenu = () => {
         variant="primary"
         title="Praticar todos os itens"
         action={() =>
-          toggleModalActive({ status: true, type: "LEARNING_MODAL" })
+          toggleModalActive({ status: true, modalType: "LEARNING_MODAL" })
         }
       />
       <ActionButton
@@ -19,7 +19,7 @@ const TabOptionsMenu = () => {
         variant="secondary"
         title="Praticar items com aprendizado abaixo de 75%"
         action={() =>
-          toggleModalActive({ status: true, type: "LEARNING_MODAL" })
+          toggleModalActive({ status: true, modalType: "LEARNING_MODAL" })
         }
       />
     </div>

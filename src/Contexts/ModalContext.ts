@@ -1,16 +1,16 @@
 import { createContext, useContext } from "react";
 
-type modalType = "LEARNING_MODAL" | "DETAILS_MODAL";
+type Type = "LEARNING_MODAL" | "DETAILS_MODAL";
 
 type ContextProps = {
   modalActive: boolean;
-  type: modalType;
+  type: Type;
   toggleModalActive: ({
     status,
-    type,
+    modalType,
   }: {
     status: boolean;
-    type?: modalType;
+    modalType?: Type;
   }) => void;
 };
 
